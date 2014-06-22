@@ -495,6 +495,8 @@
   <project path="tools/studio/cloud" name="platform/tools/studio/cloud" groups="notdefault,tools" remote="aosp" revision="refs/tags/android-4.4.4_r1" />
   <project path="tools/swt" name="platform/tools/swt" groups="notdefault,tools" remote="aosp" revision="refs/tags/android-4.4.4_r1" />
 
-  <project path="vendor/cm" name="android_vendor_cm" remote="cmplus" revision="cm-11.0"/>
+  <project path="vendor/cm" name="android_vendor_cm" remote="cmplus" revision="cm-11.0">
+      <copyfile src="tools/build-cm+" dest="build-cm+" />
+  </project>
   <project path="vendor/cyngn" name="cyngn/android_vendor_cyngn" />
 </manifest>

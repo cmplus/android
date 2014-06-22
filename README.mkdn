@@ -12,6 +12,24 @@ Then to sync up:
 
     repo sync
 
+To build:
+
+    cd to working dir
+    . build-cm+ [options] [device]
+
+Options:
+
+    -s = sync
+    -c1 = make clean
+    -c2 = make dirty (remove build.prop and zip files)
+    -c3 = make kernelclean
+    -l = create changelog
+
+Example:
+
+    cd cm+
+    . build-cm+ -s -c1 -l d2lte
+
 Please see the [CyanogenMod Wiki](http://wiki.cyanogenmod.org/) for building instructions.
 
 For more information on this Github Organization and how it is structured, 
